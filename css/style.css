@@ -1,0 +1,228 @@
+:root {
+    --white-title-color: #ffffff;
+    --text-color: #9DA4BD;
+    --hover-color: #FF6C00;
+    --black-text-color: #303030;
+    --description-color: #555555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* глобальне оформлення тексту */
+
+h1,
+h2 {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+
+    letter-spacing: 0.05em;
+}
+
+.social-link,
+.hero-text-en,
+.hero-btn,
+.about-text,
+.price-text,
+.statistic-text,
+.master-text,
+.works-text,
+.footer-link,
+.footer-text,
+.work-time {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+}
+
+.address-text,
+.address-tel,
+.address-mail {
+    font-style: normal;
+}
+
+.nav-item,
+.online-registration,
+.nav-contact {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+}
+
+.hero-text-ru,
+.about-motivation,
+.price-list,
+.statistic-advantage,
+.address-text,
+.address-tel,
+.address-mail {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66;
+
+    letter-spacing: 0.02em;
+
+}
+
+.online-registration {
+    text-transform: uppercase;
+}
+
+.social-link,
+.footer-text,
+.footer-link {
+    letter-spacing: 0.2em;
+}
+
+.about-text,
+.hero-text-en,
+.price-text,
+.statistic-text,
+.master-text,
+.works-text {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.hero-btn {
+    letter-spacing: 0.1em;
+}
+
+/* шапка сторінки */
+
+.nav-link,
+.nav-contact,
+.online-registration {
+    color: black;
+}
+
+.online-registration {
+    border: 1px solid var(--hover-color);
+    border-radius: 25px;
+}
+
+.social-link {
+    color: var(--black-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.social-link:hover,
+.social-link:focus,
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--hover-color);
+}
+
+/* головна секція */
+
+.hero-text-en,
+.hero-text-ru {
+    color: var(--text-color);
+}
+
+/* про нас */
+
+.about-text,
+.about-title {
+    color: var(--black-text-color);
+}
+
+.about-us {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+
+    letter-spacing: 0.02em;
+
+    color: var(--description-color);
+}
+
+.about-motivation {
+    color: var(--description-color);
+}
+
+/* послуги та ціни */
+
+.price-text {
+    color: var(--text-color);
+}
+
+.price-list {
+    color: var(--text-color);
+}
+
+/* статистика */
+
+.statistic-number {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.35;
+    letter-spacing: 0.05em;
+
+    color: var(--black-text-color);
+}
+
+.sup {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.37;
+
+    color: #FF6C00;
+}
+
+.statistic-text {
+    color: var(--black-text-color);
+}
+
+.statistic-text,
+.statistic-item {
+    color: var(--black-text-color);
+}
+
+.statistic-advantage {
+    color: var(--description-color);
+}
+
+/* наші майстри */
+
+.master-text,
+.master-item {
+    color: var(--black-text-color);
+}
+
+.master-name {
+    color: var(--black-text-color);
+}
+
+.master-position {
+    color: var(--hover-color);
+}
+
+/* ------------------ */
+
+.works-text {
+    color: var(--black-text-color);
+}
+
+.address-text,
+.address-tel,
+.address-mail,
+.footer-text {
+    color: var(--text-color);
+}
+
+.footer-link {
+    color: var(--black-text-color);
+}
