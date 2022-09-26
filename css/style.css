@@ -4,14 +4,15 @@
     --hover-color: #FF6C00;
     --black-text-color: #303030;
     --description-color: #555555;
+    --background-color: #F7F7F7;
 }
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-}
+} */
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -99,7 +100,30 @@ h2 {
     letter-spacing: 0.1em;
 }
 
+.container {
+    display: inline-block;
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 /* шапка сторінки */
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-contact,
+.online-registration {
+    text-decoration: none;
+}
 
 .nav-link,
 .nav-contact,
@@ -108,8 +132,17 @@ h2 {
 }
 
 .online-registration {
+    display: inline-block;
+    padding: 12px 20px;
+
     border: 1px solid var(--hover-color);
     border-radius: 25px;
+}
+
+.online-registration:hover,
+.online-registration:focus {
+    background-color: var(--hover-color);
+    color: var(--white-title-color);
 }
 
 .social-link {
@@ -132,11 +165,65 @@ h2 {
     color: var(--text-color);
 }
 
+.hero {
+    margin-bottom: 22px;
+}
+
+.hero-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-link {
+    text-decoration: none;
+}
+
+.hero-text-en,
+.hero-title,
+.hero-text-ru {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-text-en {
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    margin-bottom: 20px;
+}
+
+.hero-text-ru {
+    margin-bottom: 124px;
+}
+
+.hero-btn {
+margin: 0;
+padding: 0;
+border: 0;
+background-color: transparent;
+}
+
 /* про нас */
+
+.about-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 .about-text,
 .about-title {
     color: var(--black-text-color);
+}
+
+.about-text,
+.about-title,
+.about-motivation,
+.about-us {
+    margin: 0;
+    padding: 0;
 }
 
 .about-us {
@@ -157,13 +244,35 @@ h2 {
 
 .price-text {
     color: var(--text-color);
+
+    margin: 0;
+    padding: 0;
+}
+
+.price-item {
+    margin: 0;
+    padding: 0;
 }
 
 .price-list {
+    padding: 0;
+
     color: var(--text-color);
 }
 
 /* статистика */
+
+.statistic-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.statistic-number,
+.statistic-text {
+    margin: 0;
+    padding: 0;
+}
 
 .statistic-number {
     font-weight: 700;
@@ -172,6 +281,12 @@ h2 {
     letter-spacing: 0.05em;
 
     color: var(--black-text-color);
+}
+
+.statistic-item,
+.statistic-advantage {
+    margin: 0;
+    padding: 0;
 }
 
 .sup {
@@ -197,9 +312,32 @@ h2 {
 
 /* наші майстри */
 
+.master {
+    background-color: var(--background-color);
+}
+
 .master-text,
 .master-item {
     color: var(--black-text-color);
+}
+
+.master-text,
+.master-item {
+    margin: 0;
+    padding: 0;
+}
+
+.master-list,
+.social-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.master-name,
+.master-position {
+    margin: 0;
+    padding: 0;
 }
 
 .master-name {
@@ -213,7 +351,16 @@ h2 {
 /* ------------------ */
 
 .works-text {
+    margin: 0;
+    padding: 0;
+
     color: var(--black-text-color);
+}
+
+.works-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .address-text,
@@ -226,3 +373,63 @@ h2 {
 .footer-link {
     color: var(--black-text-color);
 }
+
+/* онлайн-запис */
+
+.registrations {
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea {
+    padding: 0;
+}
+
+.btn-send {
+    margin: 0;
+    padding: 12px 20px;
+    background-color: transparent;
+    border: 1px solid var(--hover-color);
+    border-radius: 25px;
+}
+
+.btn-send:hover,
+.btn-send:focus {
+    background-color: var(--hover-color);
+    color: var(--white-title-color);
+}
+
+.info-contacts {
+    margin: 0;
+    padding: 0;
+}
+
+.address-list,
+.footer-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.address-text,
+.work-time {
+    margin: 0;
+    padding: 0;
+}
+
+.address-tel {
+    text-decoration: none;
+}
+
+.footer-link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--hover-color);
+}
+

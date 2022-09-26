@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -26,7 +29,7 @@
                     <li class="nav-item"><a href="#masters" class="nav-link">Мастера</a></li>
                     <li class="nav-item"><a href="#contacts" class="nav-link">Контакты</a></li>
                 </ul>
-                <ul>
+                <ul class="nav-list">
                     <li><a href="tel:+380441111111" class="nav-contact">+38 044 111 11 11</a></li>
                     <li><a href="#registrations" class="online-registration">онлайн-запись</a></li>
                 </ul>
@@ -163,7 +166,7 @@
             <div class="container">
                 <p class="master-text">для настоящих ценителей атмосферы</p>
                 <h2 class="master-item" id="masters">Наши мастера</h2>
-                <ul class="maste-list">
+                <ul class="master-list">
                     <li class="master-item">
                         <img src="./images/barber1.jpg" alt="barber1" width="370">
                         <h3 class="master-name">John Smith</h3>
@@ -274,16 +277,16 @@
         <section class="info">
             <div class="info-box container">
                 <div>
-                    <h2 id="registrations">Онлайн-запись</h2>
+                    <h2 class="registrations" id="registrations">Онлайн-запись</h2>
                     <form>
                         <input type="text">
                         <input type="tel">
                         <textarea></textarea>
-                        <button type="submit">отправить</button>
+                        <button class="btn-send" type="submit">отправить</button>
                     </form>
                 </div>
                 <div>
-                    <h2 id="contacts">Контакты</h2>
+                    <h2 class="info-contacts" id="contacts">Контакты</h2>
                     <address class="address">
                         <ul class="address-list">
                             <li class="address-title">
@@ -310,7 +313,7 @@
     <!-- підвал -->
     <footer class="footer">
         <div class="footer-box container">
-            <p class="footer-text">&copy; Copyright 2020</p>
+            <p class="footer-text">&copy; Copyright 2022</p>
             <ul class="footer-list">
                 <li class="footer-title">
                     <a class="footer-link" href="">Instagram</a>
