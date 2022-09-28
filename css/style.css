@@ -33,6 +33,7 @@ h2 {
 .social-link,
 .hero-text-en,
 .hero-btn,
+.hero-btn-rt,
 .about-text,
 .price-text,
 .statistic-text,
@@ -54,6 +55,7 @@ h2 {
 
 .nav-item,
 .online-registration,
+.online-registration-wt,
 .nav-contact {
     font-weight: 600;
     font-size: 12px;
@@ -76,7 +78,8 @@ h2 {
 
 }
 
-.online-registration {
+.online-registration,
+.online-registration-wt {
     text-transform: uppercase;
 }
 
@@ -96,19 +99,21 @@ h2 {
     text-transform: uppercase;
 }
 
-.hero-btn {
+.hero-btn,
+.hero-btn-rt {
     letter-spacing: 0.1em;
 }
-
 .container {
-    display: inline-block;
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 1200px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
 /* шапка сторінки */
+
+.header {
+    background-color: var(--black-text-color);
+}
 
 .nav-list {
     margin: 0;
@@ -121,7 +126,8 @@ h2 {
 }
 
 .nav-contact,
-.online-registration {
+.online-registration,
+.online-registration-wt {
     text-decoration: none;
 }
 
@@ -131,8 +137,18 @@ h2 {
     color: black;
 }
 
-.online-registration {
+.online-registration-wt {
+    color: var(--white-title-color);
+}
+
+.nav-list-contacts {
+    margin-left: auto;
+}
+
+.online-registration,
+.online-registration-wt {
     display: inline-block;
+
     padding: 12px 20px;
 
     border: 1px solid var(--hover-color);
@@ -143,6 +159,11 @@ h2 {
 .online-registration:focus {
     background-color: var(--hover-color);
     color: var(--white-title-color);
+}
+
+.online-registration-wt:hover,
+.online-registration-wt:focus {
+    background-color: var(--hover-color);
 }
 
 .social-link {
@@ -166,7 +187,7 @@ h2 {
 }
 
 .hero {
-    margin-bottom: 22px;
+    background-color: var(--black-text-color);
 }
 
 .hero-list {
@@ -198,11 +219,28 @@ h2 {
     margin-bottom: 124px;
 }
 
-.hero-btn {
-margin: 0;
-padding: 0;
-border: 0;
-background-color: transparent;
+.hero-btn,
+.hero-btn-rt {
+    margin: 0;
+    padding: 8px 0;
+    border: 0;
+    border-bottom: 2px solid var(--text-color);
+    width: 60px;
+    color: var(--text-color);
+    background-color: transparent;
+    text-align: left;
+}
+
+.hero-btn-rt {
+    text-align: right;
+}
+
+.hero-btn:hover,
+.hero-btn:focus,
+.hero-btn-rt:hover,
+.hero-btn-rt:focus {
+    color: var(--white-title-color);
+    border-bottom: 2px solid var(--white-title-color);
 }
 
 /* про нас */
@@ -241,6 +279,10 @@ background-color: transparent;
 }
 
 /* послуги та ціни */
+
+.price {
+    background-color: var(--black-text-color);
+}
 
 .price-text {
     color: var(--text-color);
@@ -376,6 +418,10 @@ background-color: transparent;
 
 /* онлайн-запис */
 
+.info {
+    background-color: var(--black-text-color);
+}
+
 .registrations {
     margin: 0;
     padding: 0;
@@ -390,8 +436,10 @@ textarea {
     margin: 0;
     padding: 12px 20px;
     background-color: transparent;
+    color: var(--white-title-color);
     border: 1px solid var(--hover-color);
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .btn-send:hover,
@@ -416,6 +464,10 @@ textarea {
 .work-time {
     margin: 0;
     padding: 0;
+}
+
+.work-time {
+    color: var(--white-title-color);
 }
 
 .address-tel {
