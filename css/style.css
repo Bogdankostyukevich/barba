@@ -104,8 +104,8 @@ h2 {
     letter-spacing: 0.1em;
 }
 .container {
-    width: 1200px;
-    padding: 0 15px;
+    width: 1280px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -134,7 +134,7 @@ h2 {
 .nav-link,
 .nav-contact,
 .online-registration {
-    color: black;
+    color: var(--white-title-color);
 }
 
 .online-registration-wt {
@@ -190,13 +190,24 @@ h2 {
     background-color: var(--black-text-color);
 }
 
+.hero .container {
+    padding-top: 272px;
+    padding-left: 215px;
+}
+
 .hero-list {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
+.hero ul:last-child {
+    padding-bottom: 40px;
+    text-align: right;
+}
+
 .social-link {
+    color: aqua;
     text-decoration: none;
 }
 
@@ -212,6 +223,7 @@ h2 {
 }
 
 .hero-title {
+    color: var(--white-title-color);
     margin-bottom: 20px;
 }
 
@@ -245,10 +257,19 @@ h2 {
 
 /* про нас */
 
+.about .container {
+    padding-top: 139px;
+    padding-bottom: 121px;
+}
+
 .about-list {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.about-item {
+    margin-right: 35px;
 }
 
 .about-text,
@@ -264,7 +285,18 @@ h2 {
     padding: 0;
 }
 
+.about-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-motivation {
+    margin-bottom: 21px;
+}
+
 .about-us {
+    margin-bottom: 38px;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
@@ -274,14 +306,22 @@ h2 {
     color: var(--description-color);
 }
 
-.about-motivation {
-    color: var(--description-color);
+.about .online-registration {
+    color: var(--black-text-color)
 }
 
 /* послуги та ціни */
 
 .price {
     background-color: var(--black-text-color);
+}
+
+.price-box {
+    padding: 130px 55px;
+}
+
+.price a {
+    margin-top: 50px;
 }
 
 .price-text {
@@ -292,8 +332,10 @@ h2 {
 }
 
 .price-item {
-    margin: 0;
-    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 44px;
+
+    color: var(--white-title-color)
 }
 
 .price-list {
@@ -302,7 +344,13 @@ h2 {
     color: var(--text-color);
 }
 
+
 /* статистика */
+
+.statistic-box {
+    padding-top: 121px;
+    padding-bottom: 130px;
+}    
 
 .statistic-list {
     margin: 0;
@@ -329,6 +377,15 @@ h2 {
 .statistic-advantage {
     margin: 0;
     padding: 0;
+}
+
+.statistic-box h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.statistic-number {
+    margin-bottom: 20px;
 }
 
 .sup {
@@ -358,6 +415,11 @@ h2 {
     background-color: var(--background-color);
 }
 
+.masters-box {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .master-text,
 .master-item {
     color: var(--black-text-color);
@@ -367,6 +429,11 @@ h2 {
 .master-item {
     margin: 0;
     padding: 0;
+}
+
+.master-title {
+    margin-top: 18px;
+    margin-bottom: 40px;
 }
 
 .master-list,
@@ -376,6 +443,16 @@ h2 {
     list-style: none;
 }
 
+.social-list {
+    width: 180px;
+    margin: 0 auto;
+}
+
+.master-item {
+    width: 370px;
+    text-align: center;
+}
+
 .master-name,
 .master-position {
     margin: 0;
@@ -383,17 +460,28 @@ h2 {
 }
 
 .master-name {
+    margin-top: 28px;
+    margin-bottom: 7px;
+
     color: var(--black-text-color);
 }
 
 .master-position {
+    margin-bottom: 27px;
+
     color: var(--hover-color);
 }
 
+
 /* ------------------ */
 
+.works-box {
+    padding-top: 200px;
+    padding-bottom: 60px;
+}
+
 .works-text {
-    margin: 0;
+    margin-bottom: 44px;
     padding: 0;
 
     color: var(--black-text-color);
@@ -418,6 +506,11 @@ h2 {
 
 /* онлайн-запис */
 
+.info-box {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
 .info {
     background-color: var(--black-text-color);
 }
@@ -425,6 +518,11 @@ h2 {
 .registrations {
     margin: 0;
     padding: 0;
+}
+
+.registrations,
+.info-contacts {
+    color: var(--white-title-color);
 }
 
 input,
@@ -449,7 +547,7 @@ textarea {
 }
 
 .info-contacts {
-    margin: 0;
+    margin-bottom: 40px;
     padding: 0;
 }
 
@@ -466,12 +564,24 @@ textarea {
     padding: 0;
 }
 
+.address-tel {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
 .work-time {
+    margin-top: 70px;
+    margin-bottom: 20px;
     color: var(--white-title-color);
 }
 
-.address-tel {
-    text-decoration: none;
+/* підвал */
+
+.footer-box {
+    padding-top: 125px;
+    padding-bottom: 55px;
 }
 
 .footer-link {
